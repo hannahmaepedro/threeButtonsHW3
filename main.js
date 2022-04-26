@@ -5,14 +5,7 @@ document.addEventListener("DOMContentLoaded", function (event) {
     document.getElementById("textbox2").value = origArray[1];
     document.getElementById("textbox3").value = origArray[2];
     
-
-    document.getElementById("Square").addEventListener("click", function () {
-        newArray = origArray.map(cubeBox);
-        document.getElementById("textbox1").value = newArray[0];
-        document.getElementById("textbox2").value = newArray[1];
-        document.getElementById("textbox3").value = newArray[2];
-        });
-        
+    document.getElementById("Square").addEventListener("click", square);
     document.getElementById("Cube").addEventListener("click", cube )
     document.getElementById("ToTheFourth").addEventListener("click", fourth )
 });
